@@ -1,9 +1,3 @@
-> To use this template, clone a new repository based on this and
-> 1. Fill out this README.md, guided by the tasks below
-> 1. Implement the test cases in the choosen framework which are listed in [TESTCASES.md](TESTCASES.md)
-> 1. Delete this quotation
-> 1. Delete tasks
-
 # evaluation-nightwatch
 
 
@@ -24,6 +18,7 @@ This is a template repository to create test-ware for evaluating the Nightwatch 
 ## Test cases
 
 The implemented test cases can be found in [TESTCASES.md](TESTCASES.md).
+The TC-3 test case is not implemented because Nightwatch does not contain a built-in method for checking if an element is in the viewport.
 
 ## Setup
 
