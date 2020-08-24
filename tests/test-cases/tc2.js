@@ -15,13 +15,16 @@ describe("TC-2 Checking search field on landing page", () => {
     test("it should be \"Search\" as placeholder", () => {
         this.angularPage.expect.element("@searchInput").to.have.attribute("placeholder").that.equal("Search");
     });
-    test("When it is clicked in and \"directive\" is typed in it then \"Directive\" should be listed in the \"API\" section", () => {
-        this.angularPage.click("@searchInput");
-        this.angularPage.sendKeys("@searchInput", "directive");
-        const APISection = this.angularPage.section.APISection;
-        APISection.expect.element("@DirectiveResult").text.to.equal("Directive");
-    });
-    test("When \"Directive\" is clicked in the \"API\" section, then the URL should be https://angular.io/api/core/Directive and the title on the content should be \"Directive\"", browser => {
+    test("When it is clicked in and \"directive\" is typed in it then \"Directive\" should be listed in the \"API\" section",
+        () => {
+            this.angularPage.click("@searchInput");
+            this.angularPage.sendKeys("@searchInput", "directive");
+            const APISection = this.angularPage.section.APISection;
+            APISection.expect.element("@DirectiveResult").text.to.equal("Directive");
+        });
+    test("When \"Directive\" is clicked in the \"API\" section, " +
+        "then the URL should be https://angular.io/api/core/Directive and the title on the content should be \"Directive\"",
+    browser => {
         const APISection = this.angularPage.section.APISection;
         APISection.click("@DirectiveResult");
         this.angularPage.waitForElementVisible("@pageTitle");
