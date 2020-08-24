@@ -1,31 +1,24 @@
-> To use this template, clone a new repository based on this and
-> 1. Fill out this README.md, guided by the tasks below
-> 1. Implement the test cases in the choosen framework which are listed in [TESTCASES.md](TESTCASES.md)
-> 1. Delete this quotation
-> 1. Delete tasks
+# evaluation-nightwatch
 
-# evaluation-template
 
-- [ ] Update name to evaluation-(framework name) here and in pacakge.json too
+This is a template repository to create test-ware for evaluating the Nightwatch (JS) test automation tools.
 
-This is a template repository to create test-ware for evaluating certain (JS) test automation tools.
-
-- [ ] Update description to describe purpose of this repository, e.g. This is a test-ware for evaluation FRAMEWORK test automation tool.
 
 ## Prerequisites
 
 1. Node.js LTS
-1. [ ] Add additional prerequisites if necessary
+2. WebDriver binaries or/and Selenium Server
 
 ## Framework used
 
-- [ ] Add name of the framework
-- [ ] Add URL to the homepage and API docs of the framework
-- [ ] Add brief description of the framework
+- Nightwatch.js
+- https://nightwatchjs.org
+- Nightwatch.js is an automated end-to-end testing framework for web applications and websites. It is written in Node.js and uses the W3C WebDriver API (formerly Selenium WebDriver) for interacting with various browsers.
 
 ## Test cases
 
 The implemented test cases can be found in [TESTCASES.md](TESTCASES.md).
+The TC-3 test case is not implemented because Nightwatch does not contain a built-in method for checking if an element is in the viewport.
 
 ## Setup
 
@@ -33,12 +26,8 @@ The implemented test cases can be found in [TESTCASES.md](TESTCASES.md).
 npm install
 ```
 
-- [ ] Add additional setup instructions if necessary
-
 ## Execution
 
 ```bash
 npm test
 ```
-
-- [ ] Add additional instructions to run tests
