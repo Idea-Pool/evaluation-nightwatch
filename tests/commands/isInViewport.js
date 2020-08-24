@@ -1,3 +1,7 @@
+/*
+This is an attempt to create a custom command to check if an element is in the viewport.
+It doesn't work.
+ */
 module.exports.command = function (element, callback) {
     const self = this;
     this.execute(function(elem) {

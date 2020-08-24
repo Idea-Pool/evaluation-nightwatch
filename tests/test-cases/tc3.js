@@ -1,3 +1,6 @@
+/*
+The TC-3 test case is not finished due to the lack of isInViewport function.
+ */
 xdescribe("TC-3 Checking form elements", () => {
     before(browser => {
         browser.maximizeWindow();
